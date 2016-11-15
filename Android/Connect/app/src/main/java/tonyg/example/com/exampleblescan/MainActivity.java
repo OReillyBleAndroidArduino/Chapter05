@@ -99,11 +99,6 @@ public class MainActivity extends AppCompatActivity {
         mBlePeripheralsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.v(TAG, "Adapter count: "+parent.getCount());
-                Log.v(TAG, "Adapter child count: "+parent.getChildCount());
-                Log.v(TAG, "Adapter click position: "+position);
-                Log.v(TAG, "Adapter view: "+view.toString());
-                Log.v(TAG, "Adapter ID: "+id);
 
                 // only click through if the selected ListItem represents a Bluetooth Peripheral
                 BlePeripheralListItem selectedPeripheralListItem = (BlePeripheralListItem) mBlePeripheralsListView.getItemAtPosition(position);
